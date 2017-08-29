@@ -65,3 +65,16 @@ Go to [`angular2-product`](http://localhost:8080/angular2-product/) in your brow
 # License
 
 [MIT](/LICENSE)
+
+# Docker
+
+First run the container:
+
+```
+docker run --name jhipster -v "$PWD":/home/jhipster/app -v ~/.m2:/home/jhipster/.m2 -v "/var/run/docker.sock:/var/run/docker.sock" -p 8000:8080 -p 9000:9000 -p 3001:3001 -d -t jhipster/jhipster
+```
+
+
+```
+docker exec -it jhipster bash
+```
